@@ -1,0 +1,1095 @@
+  *{
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts */
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(font/Oswald.ttf);
+}
+
+@font-face{
+    font-family: 'Pushster';
+    src: url(font/Pushster-Regular.ttf);
+}
+
+
+/*----------------------------  nav bar ---------------------------- */
+
+nav{
+    height: 53px;
+    width: 100%;
+    border-bottom: 5px solid snow;
+    background-image: linear-gradient(to right, Linen , LightSlateGray);
+}
+
+nav ul{
+    float: right;
+    margin: 8px 40px 0 0;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 0 28px;
+    font-size: 27px;
+    font-family: Pushster;
+    cursor: pointer;
+    transition: all 0.12s ease-in-out;
+}
+
+#search{
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    width: 200px;
+    border-bottom: 1px solid black;
+}
+
+#search::placeholder{
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+
+nav ul li a:hover{  
+    padding: 3px;
+    border-bottom: 2px solid #F0F8FF;
+}
+
+nav img{
+    position: absolute;
+    width: 100px;
+    margin: 0 0 0 35px ;
+    cursor: pointer;
+}
+
+/* Panle Headings  */
+
+.heading{
+    font-family: Oswald;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+/*---------------------------- Home Page  ----------------------------*/
+
+/* Banner */
+.thumbnail_container{
+    margin-top: 20px;
+    margin-left: 2.2%;
+    
+}
+
+.thumbnail_container img{
+    width: 98%;
+}
+
+/* New arrival section */
+.newArrival_container{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.newArrival_container h1, .cata_container h1{
+    font-family: Pushster;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 50px 0;
+}
+
+.newArrival_container div{
+    position: relative;
+    width: 12%;
+    float: left;
+    margin: 0 0 0 3.9%;
+}
+
+.newArrival_container div p{
+    font-family: Oswald;
+    text-align: center;
+}
+
+.newArrival_container div a img{ 
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Catagorie section */
+.cata_container{
+    position:relative;
+    width: 100%;
+    margin: 23% 0 0 0;
+}
+
+.cata_container h1{
+    margin-bottom: 70px;
+}
+
+.cata_container div{
+    position: relative;
+    width: 19.7%;
+    float: left;
+    margin: 0 0 50px 4%;
+   
+    border-radius: 10px;
+}
+
+.cata_container div img{
+    width: 100%;
+    border-radius: 6px 6px  0 0;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+
+.cata_container div p{
+    font-family: Oswald;
+    text-align: center;
+    font-size: 24px;
+}
+
+/*---------------------------- Search Panel  ----------------------------*/
+
+.search-panel{
+    position: absolute;
+    width: 16%;
+}
+
+.filter-box{
+    position: relative;
+    margin: 15px 0 0 8%;
+    border-right: 2px solid black; 
+}
+
+.search_header{
+    font-family: Oswald;
+    font-size: 25px;
+}
+
+.filter-box form label{
+    font-family: Oswald;
+}
+
+/* changing the width and display of the jquery ui checkboxes */
+.ui-checkboxradio-label.ui-corner-all{
+    display:flexbox;
+    margin: 0 0 5px 5px;
+    width: 50px;
+    background-color: transparent;
+    color: black;
+}
+
+#priceDisplay{
+    border:0; 
+    color:red; 
+    font-size: 17px;
+    font-weight:bold;
+    text-align: center;
+    width: 70px;
+}
+
+#slider-range{
+    width: 80%;
+}
+
+#clearFliter_button{
+    font-family: Oswald;
+    margin: 25px 0 0 0;
+    width: 60%; 
+    background: LightGray;
+    outline: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.12s ease-in-out;
+}
+
+#clearFliter_button:hover{
+    background-color: black;
+}
+
+/*---------------------------- Main Panel ----------------------------*/
+#main-panel_container{
+    position: absolute;
+    width: 59%;
+    margin: 0 0 0 18%;
+}
+
+#main-panel li{
+    position: relative;
+    width: 240px;
+    height: 380px;
+    border-radius: 15px;
+    border: 0.5px solid grey;
+    float: left;
+    margin: 0 0 3% 4.5%;
+    background-color: white;
+    list-style: none 
+}
+
+#main-panel li img:nth-of-type(1){ 
+    background-color: whitesmoke;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid grey;
+    width: 240px;
+}
+
+#main-panel li h2{
+    font-family: Oswald;
+    font-size: 21px;
+    padding:7px 0 0 25px;
+}
+
+#main-panel li p:nth-of-type(1){
+    padding:7px 0 0 25px;
+    color: grey;
+    font-weight: bold;
+}
+
+#main-panel li p:nth-of-type(2){
+    padding:7px 0 0 25px;
+    color: red;
+    font-weight: bold;
+}
+
+#main-panel li a button {
+    margin:8px 0 0 23px;
+    padding: 7px;
+    background: LightGray;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+    color: snow;
+    cursor: pointer;
+    transition: all 0.12s ease-in-out;
+}
+
+#main-panel li a button:hover{
+    background-color: black;
+}
+
+#main-panel li img:nth-of-type(2){ 
+    width: 23px;
+    right: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 14px;
+    cursor: pointer;
+}
+
+#main-panel li img:nth-of-type(3){
+    width: 23px;
+    margin-right: 40px;
+    position: absolute;
+    right: 20px;
+    bottom: 14px;
+    cursor: pointer;
+}
+
+/*---------------------------- Fav Panel ----------------------------*/
+.fav-panel{
+    position: absolute;
+    width: 22%;
+    height: 250px;
+    right: 2px;
+    z-index: -1;
+}
+
+/* changing the look of the container */
+.basket {
+    position: relative;
+    z-index: -1;
+}
+
+.basket .basket_list {
+    height: 115vh;
+    border-radius: 5px;
+    padding: 10px 0 10px;
+}
+
+.basket .basket_list .head {
+    overflow: hidden;
+    margin: 0 10px;
+    height: 30px;
+    line-height: 26px;
+    color: #666;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/* changes the font styles of the headings */
+.basket_list .head .name{
+    font-size: 24px;
+    font-family: Oswald;
+    color: black;
+}
+
+/* editing the the input of the draged items */
+.basket ul li {
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    margin: 0 10px;
+    height: 40px;
+    line-height: 32px;
+    border-bottom: 1px solid #eee;
+}
+
+.basket ul li:hover { 
+    border-bottom: 2px solid black;
+}
+
+/* droppable items */
+
+.basket ul li span.name {
+    overflow: hidden;
+    font-family: Oswald;
+    font-size: 21px;
+    line-height: 40px;
+}
+
+.basket ul li:hover span.name { 
+    width: 146px; 
+}
+
+/* Delete button */
+.basket ul li button.delete {
+    position: absolute;
+    right: 30px;
+    top: 3px;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    font-size: 11px;
+    border: 0;
+    color: red;
+    background-color: #eee;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: opacity .2s ease;
+}
+
+.basket ul li button.delete:active {
+    color: #fff;
+    background-color: red;
+}
+
+/*---------------------------- footer ----------------------------*/
+footer{
+    position: relative;
+    background: LightSlateGrey;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-top: auto;
+    color: white;
+}
+
+.media{
+    position: absolute;
+    top: 16%;
+    width: 100%;
+}
+
+/* chaning the size of each of the meida icons */
+.media img:nth-of-type(1){
+    width: 30px;
+}
+
+.media img:nth-of-type(2){
+    width: 40px;
+}
+
+.media img:nth-of-type(3){
+    width: 50px;
+}
+
+.media img:nth-of-type(4){
+    width: 40px;
+}
+
+
+/*---------------------------- Details layout ----------------------------*/
+
+.detailsPage_backgroundColour{
+    background-color: ghostwhite;
+}
+
+.deatilsPanel{
+    position: absolute;
+    width: 1000px;
+    top: 65px;
+    left: 3%;
+}
+
+/*Carousel to display the selected shoe */
+.slideShowBox{
+    width: 620px;
+    margin: 2px 0 0 15px;
+}
+
+.slideShowBox_displayImg img{
+    width: 480px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:zoom-in;
+}
+
+.slideShowBox_imgs img{
+    width: 70px;
+    margin: 10px 0 0 40px;
+    cursor: pointer;
+    display: inline;
+    opacity: 0.6;
+}
+
+.slideShowBox_imgs img:hover{
+    opacity: 1;
+    border-bottom: 1px solid black;
+}
+
+/* light box */
+
+#lightbox{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: ghostwhite;
+    display: none;
+}
+
+#lightbox.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*discription content  for the shoe item*/
+.discreptionBox{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 350px;
+    height: 510px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.discreptionBox h1{
+    text-align: center;
+    font-family: Pushster;
+    padding-bottom: 30px;
+    font-size: 38px;
+    margin-top: 12px;
+}
+
+.discreptionBox hr{
+    width: 250px;
+    margin-left: 30px;
+}
+
+.discreptionBox p{
+    margin: 10px 0 0 24px;
+    font-family: Oswald;
+    font-size: 16px;
+    color: DarkSlateGrey;
+}
+
+.discreptionBox p span{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.discreptionBox p:nth-of-type(1){
+    padding-bottom: 0;
+}
+
+.discreptionBox p:nth-of-type(2), .discreptionBox p:nth-of-type(3){
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.discreptionBox p:nth-of-type(5){
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* displays the color of the shoe */
+
+.multiColor_Container{
+    position: relative;
+    height: 40px;
+}
+/* creats a circle to display the shoe color */
+.multiColor_Container div{
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    float: left;
+    margin: 5px 0 0 25px;
+    border: 2px solid black;
+}
+
+/* types of colors that would go into the circle */
+.colorBox-White{ 
+    background-color: white;
+}
+
+.colorBox-Black{ 
+    background-color: black;
+}
+
+.colorBox-Red{
+    background-color: red;
+}
+
+.colorbox-Blue{
+    background-color: blue;
+}
+
+.colorBox-chocolate{
+    background-color: chocolate;
+}
+
+.colorBox-Pink{
+    background-color: pink;
+}
+
+.colorBox-Maroon{
+    background-color: maroon;
+}
+
+/* Changes the look stars for the rating for the shoes */
+.discreptionBox p:nth-of-type(4){
+    margin: 0 0 0px 24px;
+    font-size: 30px;
+    color: black;
+}
+
+/* changing the look of the price  */
+#rating{
+    font-size: 15px;
+    font-weight: normal;
+    color: red;
+}
+
+/* button to add to the fav list */
+.discreptionBox button{
+    margin: 25px 20px ;
+    width: 280px;
+    height: 35px;
+    background: LightGray;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.12s ease-in-out;
+}
+
+.discreptionBox button:hover{
+    background-color: black;
+}
+
+/* Ui Tabs */
+ 
+.tabs_container{
+    margin-top: 35px;
+    padding-bottom: 50px;
+}
+
+#tabs ul{
+    background-color: transparent;
+    border: 0;
+}
+
+/* changing the background color to transparent when clicked */
+#tabs ul li{
+    background-color: transparent;
+}
+
+/* shows the details withing the tabls otherwise nothing is displayed */
+#tabs ul li a{
+    color: black;
+}
+
+/* tab1 */
+#tabs-1 p{
+    font-family: Oswald;
+    color: black;
+}
+
+#tabs-1 p:nth-of-type(1){
+    margin: 25px 0 5px;
+}
+
+/* tab2 */
+#tabs-2 h3{
+    font-family: Pushster;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 17px;
+    color: black;
+} 
+
+.info-container{
+    overflow-x:auto;
+}
+
+table { 
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+  
+th, td {
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+/* tab3 */
+#tabs-3 h3{
+    margin: 10px 0 10px 0;
+    font-family: Pushster;
+    font-size: 30px;
+    color: black;
+}
+
+#tabs-3 p{
+    font-family: Oswald;
+    color: black;
+    font-size: 18px;
+}
+
+
+.testBox{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+}
+
+/*---------------------------- About Me Page---------------------------------*/
+
+/* changing the background colour for half the page */
+#half_background{
+    position: absolute;
+    background-image: linear-gradient(to right, Linen , LightSlateGray);
+    width: 53%;
+    height: 95%;
+}
+
+img[alt="myself"]{ 
+    width: 43%;
+    border-radius: 15px;
+    margin: 12% 0 0 29%;
+    /* used to give a boxshadow in the  backgorund of the image*/
+    box-shadow: -100px 50px rgba(0,0,0,0.3), 100px -50px rgba(0,0,0,0.3);
+    transform: rotate(2deg);
+}
+
+.AboutMe_Article{
+    position: absolute;
+    width: 45%;
+    height: 300px;
+    right: 0;
+    margin-top: 12%;
+}
+
+.AboutMe_Article h1{
+    text-align: center;
+    font-family: NotoSansMono;
+    font-size: 40px;
+    color: black;
+}
+
+.AboutMe_Article section p{
+    margin: 50px;
+}
+
+/* used to display the commas at the end and beginging of the article */
+.AboutMe_Article section p::before{
+    content:'\275D';
+}
+
+.AboutMe_Article section p::after{
+    content:'\275E';
+}
+
+/*----------------------------  Making Screen reactive ---------------------------- */
+
+@media screen and (max-width: 1443px){
+
+    #main-panel li{
+        position: relative;
+        width: 240px;
+        height: 380px;
+        border-radius: 15px;
+        border: 0.5px solid grey;
+        float: left;
+        margin: 0 0 3% 2%;
+        background-color: white;
+        list-style: none 
+    }
+}
+
+@media screen and (max-width: 1328px){
+
+    #main-panel_container{
+        width: 59%;
+    }
+
+    #main-panel li{
+        position: relative;
+        width: 240px;
+        height: 380px;
+        border-radius: 15px;
+        border: 0.5px solid grey;
+        float: left;
+        margin: 0 0 3% 1%;
+        background-color: white;
+        list-style: none 
+    }
+}
+
+@media screen and (max-width: 1286px){
+
+    /*---------- Search Panel --------------*/
+    .search-panel{
+        position: absolute;
+        width: 20%;
+    }
+
+    /*---------- Main Panel --------------*/
+    #main-panel_container{
+        width: 75%;
+        margin: 0 0 0 23%;
+    }
+
+    #main-panel li{
+        margin: 0 0 3% 4%;
+    }
+
+    /*---------- Fav Panel --------------*/
+    .fav-panel{
+    display: none;
+    }
+
+}
+
+@media screen and (max-width: 1043px){
+    
+    /* Details  */
+    .deatilsPanel{
+        position: relative;
+        width: 100%;
+        top: 30px;
+        left: 0;
+    }
+
+    /*Carousel to display the selected shoe */
+    .slideShowBox{
+        width: 100%;
+        margin: 2px 0 0 0;
+    }
+
+    .slideShowBox_displayImg img{
+        width: 60%;
+    }
+
+    .slideShowBox_imgs img{
+        width: 50px;
+        margin: 10px 0 0 10%;
+    }
+
+    /* discription part*/
+    .discreptionBox{
+        position: relative;
+        width: 97.6%;
+        padding: 10px;
+        border: 0;
+        border-radius: 0px;
+        background: ghostwhite;
+    }
+
+    .discreptionBox h1{  
+        font-size: 40px;
+    }
+
+    .discreptionBox hr{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .discreptionBox p{
+        margin: 10px 0 0 25%;
+        font-size: 18px;
+    }
+
+    .discreptionBox p span{   
+        font-size: 24px;   
+    }
+
+    .multiColor_Container div{
+        margin: 5px 0 0 25%;
+    }
+
+    .discreptionBox p:nth-of-type(4){
+        margin: 0 0 0px 25%;
+    }
+
+    .discreptionBox button{
+        margin: 25px 20px 0 25%;
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 896px){
+    
+    /*---------- Nav bar --------------*/
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        margin: 0px 8px;
+        font-size: 25px;
+        font-family: Pushster;
+        cursor: pointer;
+        transition: 0.50s;
+    }
+
+    #search{
+        display: none;
+    }
+
+    /*---------- Home Page --------------*/
+
+    /* New Arrival section */
+    .newArrival_container div{
+        position: relative;
+        width: 25%;
+        float: left;
+        margin: 0 0 0 7.5%;
+    }
+
+    .newArrival_container div a img{ 
+        width: 80%;
+        cursor: pointer;
+    }
+
+    /* Catagorie section */
+
+    .cata_container h1{
+        padding-top: 40%;
+    }
+
+    .cata_container div{
+        position: relative;
+        width: 26.7%;
+        float: left;
+        margin: 0 0 50px 15%;
+        border-radius: 10px;
+    }
+
+    /* About me */
+    #half_background{
+        position: absolute;
+        background-image: linear-gradient(to right, Linen , LightSlateGray);
+        width: 100%;
+        height: 515px;
+    }
+
+    img[alt="myself"]{ 
+        width: 43%;
+        border-radius: 15px;
+        margin: 25% 0 0 29%;
+        box-shadow: -100px 50px rgba(0,0,0,0.5), 100px -50px rgba(0,0,0,0.5);
+        transform: rotate(2deg);
+    }
+
+    .AboutMe_Article{
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-top: 115%;    
+    }
+
+    .AboutMe_Article h1{
+        text-align: center;
+        font-family: NotoSansMono;
+        font-size: 40px;
+        color: black;
+    }
+
+    .AboutMe_Article section p{
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .slideShowBox_imgs img{
+        width: 50px;
+        margin: 10px 0 0 14.6%;
+    }
+}
+
+@media screen and (max-width: 538px){
+     /*---------- Search Panel --------------*/
+     .search-panel{
+        position: absolute;
+        width: 100%;
+    }
+
+    .filter-box{
+        position: relative;
+        margin: 15px 0 0 15%;
+        border: none; 
+    }
+
+    /*---------- Main Panel --------------*/
+    #main-panel_container{
+        width: 100%;
+        margin: 690px 0 0 0;
+    }
+
+    #main-panel li{
+        margin: 0 0 4% 7.5%;
+        width: 185px;
+        height: 324px;
+    }
+
+    #main-panel li img:nth-of-type(1){ 
+        width: 185px;
+    }
+
+    #main-panel li h2{
+        font-size: 19px;
+    }
+
+    #main-panel li a button {
+        padding: 5px;
+    }
+
+    #main-panel li img:nth-of-type(2){ 
+        right: 13px;
+    }
+    
+    #main-panel li img:nth-of-type(3){
+        right: 5px;  
+    }
+
+    /*---------- Fav Panel --------------*/
+    .fav-panel{
+    display: none;
+    }
+}
+
+/* iphone 8+/7+/6+ */
+@media screen and (max-width: 415px) {
+
+     /*---------- Nav bar --------------*/
+    nav ul{
+        float: right;
+        margin: 8px 4px 0 0;
+    }
+
+    nav ul li a{
+        margin: 0px 8px;
+        font-size: 24px;
+        font-family: Pushster;
+    }
+
+    nav img{   
+        width: 80px;
+        margin: 5px 0 0 12px;
+    }
+
+    /*---------- Home Page --------------*/
+
+    /* New Arrival section */
+    .newArrival_container div{
+        position: relative;
+        width: 25%;
+        float: left;
+        margin: 0 0 0 7.5%;
+    }
+
+    .newArrival_container div a img{ 
+        width: 80%;
+        cursor: pointer;
+    }
+
+    /* Catagorie section */
+
+    .cata_container h1{
+        padding-top: 70%;
+    }
+
+    .cata_container div{
+        position: relative;
+        width: 37%;
+        float: left;
+        margin: 0 0 50px 8%;
+        border-radius: 10px;
+    }
+
+     /*Main Panel*/
+
+    #main-panel_container{
+        margin: 750px 0 0 0;
+    }
+
+    #main-panel li{
+        margin: 0 0 4% 2%;
+        width: 185px;
+        height: 324px;
+    }
+    
+     /* About Me */
+
+    img[alt="me"]{ 
+        width: 46%;
+        border-radius: 15px;
+        margin: 37% 0 0 27%;
+        transform: rotate(2deg);
+    }
+
+    .AboutMe_Article{
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        padding-top: 60px;
+    }
+
+    /* Editing the discription content  */
+    .discreptionBox{
+        width: 95%;  
+    }
+
+    .discreptionBox p{
+        margin: 10px 0 0 25%;
+        font-size: 16px;
+    }
+
+    .discreptionBox p span{   
+        font-size: 20px;   
+    }
+
+}

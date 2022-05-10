@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css3.css">
+    <script defer src="lightBox.js"></script>
+    <script defer src="script.js"></script>
+
+
+    <!-- UI Tabs -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    
+    
+
+    <title>UGG Oh Yeah Slides</title>
+</head>
+<body class="detailsPage_backgroundColour">
+
+    <!-- Nav bar -->
+    <header>
+        <nav>
+            <img onclick="replaceToHomePage()" src="images/Icons/logo.png" alt="logo">
+            <ul>
+                <li><a href="Home.html">Home</a> </li>
+                <li><a href="Shoes.html">Shoes</a></li>
+                <li><a href="AboutMe.html">About Me</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Details Panel -->
+    <div class="deatilsPanel">
+
+        <div class="slideShowBox">
+
+            <div class="slideShowBox_displayImg">
+                <img id="displayBox" src="images/Slides/s1/s1.png" alt="Slides 1 image 1">
+
+            </div>
+
+            <div class="slideShowBox_imgs">
+                <img src="images/Slides/s1/s1.png" alt="Slides 1 image 1" onclick="carousel(this)"> 
+                <img src="images/Slides/s1/s1.2.png" alt="Slides 1 image 2" onclick="carousel(this)">
+                <img src="images/Slides/s1/s1.3.png" alt="Slides 1 image 3" onclick="carousel(this)">
+                <img src="images/Slides/s1/s1.4.png" alt="Slides 1 image 4" onclick="carousel(this)">
+            </div>
+        </div>
+
+        <div class="discreptionBox">
+            <h1>UGG Oh Yeah Slides</h1>
+            <!-- Used to display a line -->
+            <hr>
+            <p><span>Color</span> - Black </p>
+            <div class="multiColor_Container">
+                <div class="colorBox-Black"></div>
+            </div>
+            <hr>
+            <p><span>Gender</span> - Women</p>
+            <hr>
+            <p><span>Size</span> - 7</p>
+            <hr>
+            <p>&#9733; &#9733; &#9733; &#9733; &#9734; &nbsp; <span id="rating">4.0</span></p>
+            <p>$100.00</p>
+            <button onclick="addTofav('slides1')">Add to favourites</button>
+        </div>
+
+        <div class="tabs_container">
+            <div id="tabs">
+                <ul>
+                  <li><a id="tab1" href="#tabs-1">Description</a></li>
+                  <li><a id="tab2" href="#tabs-2">Size Guide</a></li>
+                  <li><a id="tab3" href="#tabs-3">Delivery & Return</a></li>
+                </ul>
+                <div id="tabs-1">
+                  <p>Product #: 22555BLK</p>
+                  <p>Say “oh yeah!” to fresh style when you step into UGG’s Oh Yeah Slides. The 10mm sheepskin upper, lining, and midsole are ultra-comfortable, while the thick rubber outsole completes the must-have look.</p>   
+                </div>
+
+                <div id="tabs-2">
+                  <h3>Size</h3>
+
+                  <div class="info-container">
+
+                    <table>
+
+                        <tr>
+                            <th>UK</th>
+                            <th>EU</th>
+                            <th>USA</th>
+                            <th>Cms</th>
+                            <th>Inches</th>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>39.33</td>
+                            <td>6.5</td>
+                            <td>24.6</td>
+                            <td>9.69</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>40.67</td>
+                            <td>7.5</td>
+                            <td>25.4</td>
+                            <td>10</td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>42</td>
+                            <td>8.5</td>
+                            <td>26.2</td>
+                            <td>10.31</td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td>43.33</td>
+                            <td>9.5</td>
+                            <td>27.1</td>
+                            <td>10.67</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td>44.67</td>
+                            <td>10.5</td>
+                            <td>27.9</td>
+                            <td>10.98</td>
+                        </tr>
+
+                        <tr>
+                            <td>11</td>
+                            <td>46</td>
+                            <td>11.5</td>
+                            <td>28.8</td>
+                            <td>11.34</td>
+                        </tr>
+
+                        <tr>
+                            <td>12</td>
+                            <td>47.33</td>
+                            <td>12.5</td>
+                            <td>29.6</td>
+                            <td>11.65</td>
+                        </tr>
+
+
+                    </table>
+
+                  </div>
+                  
+                </div>
+                <div id="tabs-3">
+                  <h3>Delivery</h3>
+                  <p>Arrives in 5-7 business days.</p>
+                  <h3>Return</h3>
+                  <p>within 28 days (14 days for sale items) to a Clarks store, via CollectPlus or via the Post Office.
+                    Online orders paid for using Klarna need to be returned to our distribution centre where you will be 
+                    refunded to your original form of payment.</p>
+                </div>
+              </div>
+        </div>
+
+    </div>
+
+    <!-- Favourit Panel -->
+    <div class="fav-panel">
+        <h1 class="heading">Favourite</h1>
+        <div class="basket">
+            <div class="basket_list">
+                <div class="head">
+                    <span class="name">Product Name</span>
+                </div>
+                <ul>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+        } );
+    </script>
+</body>
+</html>

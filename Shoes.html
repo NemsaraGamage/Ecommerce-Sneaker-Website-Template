@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    <link rel="stylesheet" href="css3.css">
+    <script defer src="script.js"></script>
+
+    <!-- jquery -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+
+</head>
+<body>
+
+    <!-- Nav bar -->
+    <header>
+        <nav>
+            <img onclick="replaceToHomePage()" src="images/Icons/logo.png" alt="logo">
+            <ul>
+                <li><input id="search" type="text" placeholder="Search.."></li>
+                <li><a href="Home.html">Home</a> </li>
+                <li><a href="Shoes.html">Shoes</a></li>
+                <li><a href="AboutMe.html">About Me</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Panel -->
+    <div class="search-panel">
+
+        <h1 class="heading">Search</h1>
+
+        <div class="filter-box">
+
+            <form action="GET">
+
+                <!-- Gender -->
+                <label class="search_header">Gender:- </label><br>
+                <label for="men">Men</label>
+                <input type="radio" name="gender" id="men" value="Men">
+                <label for="women">Women</label>
+                <input type="radio" name="gender" id="women" value="Women">
+                <label for="universal">Universal</label>
+                <input type="radio" name="gender" id="universal" value="Universal">
+                <label for="kids">Kids</label>
+                <input type="radio" name="gender" id="kids" value="Kids">
+                <br><br>
+               
+                <!-- Shoe size -->
+                <label class="search_header">Size:-</label><br>
+                <label for="size4">4</label>
+                <input type="radio" name="size" id="size4" value="4">
+                <label for="size5">5</label>
+                <input type="radio" name="size" id="size5" value="5">
+                <label for="size6">6</label>
+                <input type="radio" name="size" id="size6" value="6">
+                <label for="size7">7</label>
+                <input type="radio" name="size" id="size7" value="7">
+                <label for="size8">8</label>
+                <input type="radio" name="size" id="size8" value="8">
+                <label for="size9">9</label>
+                <input type="radio" name="size" id="size9" value="9">
+                <label for="size10">10</label>
+                <input type="radio" name="size" id="size10" value="10">
+                <label for="size11">11</label>
+                <input type="radio" name="size" id="size11" value="11">
+                <label for="size12">12</label>
+                <input type="radio" name="size" id="size12" value="12">
+                <br><br>
+
+                <!-- Color -->
+                <label class="search_header">Color:- </label><br>
+                <label for="black">Black</label>
+                <input type="radio" name="color" id="black" value="Black">
+                <label for="red">Red</label>
+                <input type="radio" name="color" id="red" value="Red">
+                <label for="white">White</label>
+                <input type="radio" name="color" id="white" value="White">
+                <label for="brown">Brown</label>
+                <input type="radio" name="color" id="brown" value="Brown">
+                <label for="blue">Blue</label>
+                <input type="radio" name="color" id="blue" value="Blue">
+                <label for="maroon">Maroon</label>
+                <input type="radio" name="color" id="maroon" value="Maroon">
+                <br><br>
+
+                <!-- Style -->
+                <label class="search_header">Style:- </label><br>
+                <label for="sneakers">Sneakers</label>
+                <input type="radio" name="style" id="sneakers" value="Sneaker">
+                <label for="boots">Boots</label>
+                <input type="radio" name="style" id="boots" value="Boot">
+                <label for="slides">Slides</label>
+                <input type="radio" name="style" id="slides" value="Slides">
+                <br>
+
+                <!-- Price Range -->
+                <label class="search_header" for="priceDisplay">Price range:-</label>
+                <input id="priceDisplay" type="text">
+                <div id="slider-range"></div>
+
+                <!-- button to clear filter -->
+                <button type="button" id="clearFliter_button" >Clear Filter</button>
+
+            </form>
+        </div>
+
+    </div>
+    
+    <!-- Main Panel -->
+    <div id="main-panel_container">
+        <h1 class="heading">Shoes</h1>
+        <ul id="main-panel">
+            
+        </ul>
+    </div>
+
+    <!-- Favourit Panel -->
+    <div class="fav-panel">
+        <h1 class="heading">Favourite</h1>
+        <div class="basket">
+            <div class="basket_list">
+                <div class="head">
+                    <span class="name">Product Name</span>
+                </div>
+                <ul>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
